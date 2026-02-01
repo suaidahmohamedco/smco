@@ -1,65 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMCO | Law Practice | Professional Legal Services</title>
+    <title>Tetuan Suaidah Mohamed & Co | Peguamcara & Peguambela</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        .gold-gradient { background: linear-gradient(135deg, #c5a059 0%, #ecd399 100%); }
+        .text-gold { color: #c5a059; }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans">
+<body class="bg-white text-slate-800">
 
-    <nav class="flex justify-between items-center px-10 py-6 bg-white shadow-sm sticky top-0 z-50">
-        <div class="text-2xl font-serif font-bold text-slate-800 tracking-tight">Suaidah Mohamed<span class="text-blue-700">& CO</span></div>
-        <div class="space-x-8 hidden md:block">
-            <a href="#about" class="hover:text-blue-700 font-medium">About</a>
-            <a href="#services" class="hover:text-blue-700 font-medium">Practice Areas</a>
-            <a href="https://wa.me/60172952529" class="bg-blue-700 text-white px-5 py-2 rounded-md hover:bg-blue-800 transition">Contact Us</a>
+    <div class="bg-slate-900 text-white text-sm py-2 px-6 flex justify-between items-center">
+        <div class="flex space-x-4">
+            <span><i class="fa-solid fa-phone text-gold mr-2"></i> 0172952529</span>
+            <span class="hidden md:inline"><i class="fa-solid fa-envelope text-gold mr-2"></i> smco.solicitor23@gmail.com</span>
+        </div>
+        <div class="flex space-x-4">
+            <a href="https://www.facebook.com/suaidahmohamedco" target="_blank" class="hover:text-gold transition"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-white/fb shadow-sm backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="leading-tight">
+                <div class="text-xl font-serif font-bold tracking-widest text-slate-900 uppercase">TETUAN SUAIDAH MOHAMED & CO</div>
+                <div class="text-xs tracking-[0.2em] text-gold uppercase font-semibold">Peguamcara & Peguambela</div>
+            </div>
+            <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-wider">
+                <a href="#about" class="hover:text-gold transition">About Us</a>
+                <a href="#services" class="hover:text-gold transition">Services</a>
+                <a href="#contact" class="hover:text-gold transition">Contact</a>
+            </div>
         </div>
     </nav>
 
-    <header class="relative bg-slate-900 h-[600px] flex items-center text-white">
-        <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
-        <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
-            <h1 class="text-5xl md:text-6xl font-serif mb-6 leading-tight">Expert Legal Guidance You Can Trust</h1>
-            <p class="text-xl mb-8 text-slate-300">Dedicated to protecting your rights and delivering justice with integrity and excellence.</p>
-            <a href="#contact" class="bg-blue-700 px-8 py-4 text-lg font-semibold rounded-md hover:bg-blue-800 shadow-lg">Schedule a Consultation</a>
+    <header class="relative bg-slate-900 h-[550px] flex items-center overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-30"></div>
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Upholding Justice with Integrity & Transparency</h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-8 font-light italic">
+                "Providing quality and professional legal services to every stratum of society regardless of background, occupation, and income."
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#services" class="gold-gradient text-slate-900 px-8 py-3 rounded font-bold uppercase text-sm tracking-widest hover:brightness-110 transition shadow-lg">Our Services</a>
+                <a href="#contact" class="border border-white/30 px-8 py-3 rounded font-bold uppercase text-sm tracking-widest hover:bg-white hover:text-slate-900 transition">Contact Us</a>
+            </div>
         </div>
     </header>
 
-    <section id="services" class="py-20 px-10 max-w-7xl mx-auto">
-        <h2 class="text-3xl font-serif text-center mb-16 border-b-2 border-blue-700 w-fit mx-auto pb-2">Practice Areas</h2>
-        <div class="grid md:grid-cols-3 gap-10">
-            <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-blue-700 hover:-translate-y-2 transition">
-                <i class="fa-solid fa-scale-balanced text-3xl text-blue-700 mb-4"></i>
-                <h3 class="text-xl font-bold mb-3">Corporate Law</h3>
-                <p class="text-slate-600">Navigating complex business regulations and transactional disputes with precision.</p>
+    <section id="about" class="py-20 px-6 bg-slate-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8 text-slate-900">Professional Excellence</h2>
+            <p class="text-lg leading-relaxed text-slate-600">
+                We strive to offer the best solutions to all our clients. We also aim to provide accurate, transparent, and clear information and advice for every case and issue our clients face. Our commitment is to ensure legal accessibility for everyone.
+            </p>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-gold font-bold tracking-[.3em] uppercase text-sm">Legal Expertise</span>
+            <h2 class="text-4xl font-bold mt-2 text-slate-900">Our Practice Areas</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="group p-8 bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:border-gold/30 transition-all duration-300">
+                <i class="fa-solid fa-file-signature text-3xl text-gold mb-6"></i>
+                <h3 class="text-xl font-bold mb-4 border-b pb-2 border-slate-100">Estate Planning & Probate</h3>
+                <ul class="text-sm text-slate-500 space-y-2">
+                    <li>• Pentadiran Pusaka</li>
+                    <li>• Wills & Hibah</li>
+                    <li>• Trust Deed</li>
+                    <li>• Power of Attorney</li>
+                </ul>
             </div>
-            <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-blue-700 hover:-translate-y-2 transition">
-                <i class="fa-solid fa-users text-3xl text-blue-700 mb-4"></i>
-                <h3 class="text-xl font-bold mb-3">Family Law</h3>
-                <p class="text-slate-600">Compassionate representation for divorce, custody, and estate planning matters.</p>
+
+            <div class="group p-8 bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:border-gold/30 transition-all duration-300">
+                <i class="fa-solid fa-house-chimney text-3xl text-gold mb-6"></i>
+                <h3 class="text-xl font-bold mb-4 border-b pb-2 border-slate-100">Real Estate & Conveyancing</h3>
+                <ul class="text-sm text-slate-500 space-y-2">
+                    <li>• Sale & Purchase</li>
+                    <li>• Discharge of Charge</li>
+                    <li>• Perfection of Transfer</li>
+                    <li>• Perfection of Charge</li>
+                </ul>
             </div>
-            <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-blue-700 hover:-translate-y-2 transition">
-                <i class="fa-solid fa-gavel text-3xl text-blue-700 mb-4"></i>
-                <h3 class="text-xl font-bold mb-3">Civil Litigation</h3>
-                <p class="text-slate-600">Aggressive defense and prosecution in all levels of civil court proceedings.</p>
+
+            <div class="group p-8 bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:border-gold/30 transition-all duration-300">
+                <i class="fa-solid fa-handshake text-3xl text-gold mb-6"></i>
+                <h3 class="text-xl font-bold mb-4 border-b pb-2 border-slate-100">Contract & Agreement</h3>
+                <ul class="text-sm text-slate-500 space-y-2">
+                    <li>• Tenancy Agreement</li>
+                    <li>• Construction/Renovation</li>
+                    <li>• Friendship Loans</li>
+                    <li>• Statutory Declaration</li>
+                </ul>
+            </div>
+
+            <div class="group p-8 bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:border-gold/30 transition-all duration-300">
+                <i class="fa-solid fa-users-rays text-3xl text-gold mb-6"></i>
+                <h3 class="text-xl font-bold mb-4 border-b pb-2 border-slate-100">Family Matters</h3>
+                <p class="text-xs text-slate-400 mb-2 font-bold uppercase tracking-tighter">(Non-Muslim)</p>
+                <ul class="text-sm text-slate-500 space-y-2">
+                    <li>• Divorce</li>
+                    <li>• Maintenance</li>
+                    <li>• Custody</li>
+                    <li>• Adoption</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="bg-slate-900 text-white py-12 px-10">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
+    <section id="contact" class="bg-slate-900 text-white py-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
             <div>
-                <h2 class="text-2xl font-serif mb-4">Get In Touch</h2>
-                <p class="text-slate-400 mb-6">Available 24/7 for emergency legal assistance.</p>
-                <p><i class="fa-solid fa-location-dot mr-3 text-blue-500"></i> 123 Legal Way, Suite 100, City Center</p>
-                <p class="mt-2"><i class="fa-solid fa-phone mr-3 text-blue-500"></i> (555) 123-4567</p>
+                <h2 class="text-3xl font-bold mb-8">Consult With Us</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-slate-800 p-3 rounded mr-4"><i class="fa-solid fa-location-dot text-gold"></i></div>
+                        <div>
+                            <p class="font-bold">Office Address</p>
+                            <p class="text-slate-400">No. 23-2-L07, Tingkat 2, Jalan Wangsa Delima 5,<br>Seksyen 5 Wangsa Maju, 53300 Kuala Lumpur</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-slate-800 p-3 rounded mr-4"><i class="fa-solid fa-phone text-gold"></i></div>
+                        <div>
+                            <p class="font-bold">Phone / WhatsApp</p>
+                            <p class="text-slate-400">0172952529</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-slate-800 p-3 rounded mr-4"><i class="fa-solid fa-envelope text-gold"></i></div>
+                        <div>
+                            <p class="font-bold">Email</p>
+                            <p class="text-slate-400">smco.solicitor23@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="text-right">
-                <p class="text-slate-500">© 2026 Law Firm Name. All Rights Reserved.</p>
+            
+            <div class="bg-white p-8 rounded-lg">
+                <h3 class="text-slate-900 text-xl font-bold mb-6">Send a Message</h3>
+                <form action="https://formspree.io/f/YOUR_ID" method="POST" class="space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full p-3 border rounded text-slate-900 focus:outline-gold">
+                    <input type="email" placeholder="Email Address" class="w-full p-3 border rounded text-slate-900 focus:outline-gold">
+                    <textarea placeholder="How can we help you?" rows="4" class="w-full p-3 border rounded text-slate-900 focus:outline-gold"></textarea>
+                    <button class="w-full gold-gradient text-slate-900 font-bold py-3 rounded uppercase tracking-widest shadow-lg">Submit Request</button>
+                </form>
             </div>
         </div>
+    </section>
+
+    <footer class="bg-slate-950 py-8 px-6 text-center border-t border-slate-800">
+        <p class="text-slate-500 text-sm italic">Legal Disclaimer: The information on this website is for general informational purposes only and does not constitute professional legal advice.</p>
+        <p class="text-slate-400 text-xs mt-4">© 2026 Tetuan Suaidah Mohamed & Co. All Rights Reserved.</p>
     </footer>
 
 </body>
