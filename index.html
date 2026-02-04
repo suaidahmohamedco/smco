@@ -159,11 +159,18 @@
             
             <div class="bg-white p-8 rounded-lg">
                 <h3 class="text-slate-900 text-xl font-bold mb-6">Send a Message</h3>
-                <form action="https://formspree.io/f/YOUR_ID" method="POST" class="space-y-4">
-                    <input type="text" placeholder="Your Name" class="w-full p-3 border rounded text-slate-900 focus:outline-gold">
-                    <input type="email" placeholder="Email Address" class="w-full p-3 border rounded text-slate-900 focus:outline-gold">
-                    <textarea placeholder="How can we help you?" rows="4" class="w-full p-3 border rounded text-slate-900 focus:outline-gold"></textarea>
-                    <button class="w-full gold-gradient text-slate-900 font-bold py-3 rounded uppercase tracking-widest shadow-lg">Submit Request</button>
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                    <input type="hidden" name="access_key" value="3124fa48-9d59-46d1-b759-15c87d52ed4c">
+                    
+                    <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border rounded text-slate-900 focus:outline-gold">
+                    <input type="email" name="email" placeholder="Email Address" required class="w-full p-3 border rounded text-slate-900 focus:outline-gold">
+                    <textarea name="message" placeholder="How can we help you?" rows="4" required class="w-full p-3 border rounded text-slate-900 focus:outline-gold"></textarea>
+                    
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                
+                    <button type="submit" class="w-full gold-gradient text-slate-900 font-bold py-3 rounded uppercase tracking-widest shadow-lg">
+                        Submit Request
+                    </button>
                 </form>
             </div>
         </div>
